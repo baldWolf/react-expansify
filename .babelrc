@@ -1,0 +1,26 @@
+{
+    "env": {
+        "test": {
+            "presets": [
+                ["env", { 
+                    "modules": "commonjs"
+                }]
+            ],
+            "plugins": [
+                "transform-export-extensions",
+                "transform-class-properties",
+                "transform-object-rest-spread"
+            ],
+            "only": [
+                "./**/*.js",
+                "node_modules/jest-runtime"
+            ]
+        }
+    },
+    "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-react-jsx",
+        "transform-export-extensions"
+    ]
+}
